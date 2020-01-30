@@ -1,0 +1,12 @@
+test: dev
+spring:
+  datasource:
+    username: root
+    password: "{cipher}97c2dc3717c5effb1c51fa05910984baf39b89a844fc1910e3c3439f061b2521"
+    url: jdbc:mysql://localhost:3306/emp_db
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL57InnoDBDialect
+        ddl-auto: create
+  show-sql: true
